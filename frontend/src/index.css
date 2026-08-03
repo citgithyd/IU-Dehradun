@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f4f2fa;
+}
+
+/* Slim, on-brand scrollbar inside the chat window */
+.ifhe-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.ifhe-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.ifhe-scroll::-webkit-scrollbar-thumb {
+  background: #c9bce8;
+  border-radius: 999px;
+}
+.ifhe-scroll::-webkit-scrollbar-thumb:hover {
+  background: #a894d6;
+}
+
+/* Markdown content inside bot bubbles */
+.ifhe-markdown p { margin: 0 0 0.5em 0; }
+.ifhe-markdown p:last-child { margin-bottom: 0; }
+.ifhe-markdown ul { margin: 0.25em 0 0.5em 1.1em; padding: 0; list-style: disc; }
+.ifhe-markdown li { margin-bottom: 0.2em; }
+.ifhe-markdown strong { font-weight: 700; }
+.ifhe-markdown table { border-collapse: collapse; margin: 0.5em 0; width: 100%; font-size: 0.85em; }
+.ifhe-markdown th, .ifhe-markdown td { border: 1px solid #e2d9f5; padding: 4px 8px; text-align: left; }

@@ -1,0 +1,48 @@
+{
+  "schools": [
+    {
+      "name": "ICFAI Business School",
+      "short_name": "IBS",
+      "description": "Faculty of Management at IU Dehradun offering BBA, MBA and doctoral programs with case-based, industry-connected management education.",
+      "program_levels": ["Undergraduate", "Postgraduate", "Doctoral"],
+      "programs": ["BBA", "BBA (Financial Investment Analysis)", "MBA", "Ph.D in Management"]
+    },
+    {
+      "name": "ICFAI Tech School",
+      "short_name": "ITS",
+      "description": "Faculty of Science & Technology offering engineering, computer applications and science programs with modern labs and an emphasis on emerging technologies.",
+      "program_levels": ["Undergraduate", "Postgraduate", "Doctoral"],
+      "programs": [
+        "B.Tech (multiple specializations, incl. Mechatronics Engineering)",
+        "B.Tech (Lateral Entry)",
+        "B.Sc (Data Science)",
+        "B.Sc (Hons.) Mathematics",
+        "BCA (Data Science & AI / Cyber Security / DevOps & Automation / Cloud Computing / Mobile App & Web Technology)",
+        "M.Tech (Computer Science & Engineering / Mechanical Engineering / Civil Engineering / Electronics & Communication Engineering)",
+        "MCA",
+        "Ph.D in Science & Technology"
+      ]
+    },
+    {
+      "name": "ICFAI Law School",
+      "short_name": "ILS",
+      "description": "Offers integrated and professional law programs approved by the Bar Council of India, with moot court and internship exposure.",
+      "program_levels": ["Undergraduate", "Postgraduate", "Doctoral"],
+      "programs": ["LLB", "BA-LLB (Hons.)", "BBA-LLB (Hons.)", "LLM (1 Year)", "LLM (2 Years)", "Ph.D in Law"]
+    },
+    {
+      "name": "ICFAI Education School",
+      "short_name": "IEdS",
+      "description": "Offers teacher-education programs approved by the National Council for Teacher Education (NCTE), with an emphasis on pedagogy and field internships.",
+      "program_levels": ["Undergraduate", "Postgraduate", "Doctoral"],
+      "programs": ["B.Ed", "MA (Education)", "Ph.D in Education"]
+    },
+    {
+      "name": "ICFAI School of Pharmaceutical Sciences",
+      "short_name": "ISPS",
+      "description": "Offers pharmaceutical education recognised by the Pharmacy Council of India (PCI), with modern labs meeting industry practice standards.",
+      "program_levels": ["Undergraduate"],
+      "programs": ["B.Pharmacy"]
+    }
+  ]
+}

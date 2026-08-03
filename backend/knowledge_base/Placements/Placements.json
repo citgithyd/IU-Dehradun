@@ -1,0 +1,19 @@
+{
+  "placement_records": [
+    {"category": "Overview", "detail": "The Placement Department at IU Dehradun works year-round to support student placements, complemented by guest lectures and industrial tours that give students real-world exposure."},
+    {"category": "Overview", "detail": "Highest package overall: Rs. 40 LPA (Class of 2026, highest across the university)."},
+    {"category": "Overview", "detail": "Placement process: Pre-placement talks -> shortlisting/assessment -> interview rounds where applicable -> offer rollout, coordinated by the Placement Department and school-level Career Management Centers."},
+    {"category": "School Placement Stats", "school": "ICFAI Business School (IBS)", "batch": "Class of 2023", "students_placed": "93%", "average_salary": "Rs. 6.33 LPA", "highest_salary_national": "Rs. 8.65 LPA", "highest_salary_international": "Rs. 23 LPA", "average_salary_top_10_percent": "Rs. 10.44 LPA", "average_salary_top_25_percent": "Rs. 8.9 LPA", "recruiters": "58", "highest_package_latest": "Rs. 37 LPA"},
+    {"category": "School Placement Stats", "school": "ICFAI Tech School (ITS)", "highest_package": "Rs. 18 LPA"},
+    {"category": "School Placement Stats", "school": "ICFAI Law School (ILS)", "track_record": "More than 90% placements across all passed-out batches.", "highest_package": "Rs. 14 LPA"},
+    {"category": "School Placement Stats", "school": "ICFAI Education School (IEdS)", "track_record": "100% placement track record, including the Class of 2022 and Class of 2021-23 B.Ed. batches.", "highest_package": "Rs. 10 LPA"},
+    {"category": "School Career Scope", "school": "ICFAI Business School", "detail": "IBS Dehradun has placed students since its inception in 2004 through its Career Management Center, in sectors including banking, financial services, insurance, ed-tech and consulting."},
+    {"category": "School Career Scope", "school": "ICFAI Tech School", "detail": "Engineering placements draw on a network built over 17+ years, with repeat recruiters across IT services, product and core engineering firms."},
+    {"category": "School Career Scope", "school": "ICFAI Law School", "detail": "Law graduates are placed with law firms, legal process outsourcing (LPO) firms and corporate legal teams, through both on-campus and off-campus placement assistance."},
+    {"category": "School Career Scope", "school": "ICFAI Education School", "detail": "B.Ed graduates are recruited by leading schools across India, including Delhi Public School and DAV-affiliated institutions, with strong demand within Uttarakhand."},
+    {"category": "Prominent Recruiters", "school": "ICFAI Business School (IBS)", "recruiters": "ICICI Bank, Axis Bank, HDFC Bank, Kotak Mahindra Bank, IndusInd Bank, Bandhan Bank, ICICI Securities, ICICI Prudential Life Insurance, Tata Consultancy Services, Byju's, upGrad, Jaro Education, Berger Paints, Aditya Birla Fashion and Retail, Decathlon Sport India"},
+    {"category": "Prominent Recruiters", "school": "ICFAI Law School (ILS)", "recruiters": "Quislex, TGES, Legal Outsourcing 2.0, Chaudhary Law Associates, Mirza & Associates, Edison IP, TSAARO"},
+    {"category": "Career Development", "detail": "Resume building and profile preparation; guest lectures and industrial tours; summer internship support; campus placement drives throughout the year; placement brochures published by school (IBS, ITS, ILS, IEdS)."},
+    {"category": "Note", "detail": "Placement statistics vary by school, program and graduating batch. Confirm the latest detailed placement brochure from the official IU Dehradun Placements page for current figures."}
+  ]
+}

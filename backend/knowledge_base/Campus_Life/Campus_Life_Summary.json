@@ -1,0 +1,32 @@
+{
+  "overview": "IU Dehradun campus life spans academics, clubs, sports, cultural events and industry interface, on a 25-acre, Wi-Fi enabled campus at Selaqui, Dehradun with roughly 2.3 lakh sq. ft. of built-up area.",
+  "campus_infrastructure": [
+    "Academic blocks, workshops, laboratories, faculty rooms, auditorium, seminar halls, computer labs, library, canteen and sports/recreation facilities.",
+    "Latest teaching aids across classrooms, with a strong emphasis on industry-university interface.",
+    "Full-time campus-based programs offered in Management, Science & Technology, Education and Law at Bachelor, Master and Ph.D levels."
+  ],
+  "student_clubs": [
+    "Yukti Club",
+    "Sports Club",
+    "Fashion Club",
+    "Cultural Club",
+    "Art Club",
+    "Campus to Corporate Club"
+  ],
+  "infrastructure": {
+    "it_facilities": "More than 350 networked computers across campus, standard office productivity and specialized software (including statistical tools like SPSS and CAD tools like ANSYS/Pro-E), with campus-wide Wi-Fi.",
+    "computing": "Computer labs support both coursework and research, with regular hardware/software upgrades.",
+    "health_centre": "An on-campus First Aid room and ambulance, with a visiting medical practitioner available multiple times a week.",
+    "placements_cell": "A full-time Placement Cell coordinates placement activities and summer internship programs across all disciplines.",
+    "sports_facilities": "Indoor and select outdoor sports and recreational facilities are available on campus.",
+    "library": "The central library holds over 30,713 volumes and 13,558 titles across Management, Education, Engineering and Law, is open 9 AM - 6 PM on working days, and uses an automated OPAC search system.",
+    "library_databases": ["EBSCO", "Manupatra", "Emerald Marketing", "JSTOR", "Lexis Nexis", "Shodhganga", "DELNET"],
+    "library_extras": "The library subscribes to 93+ print periodicals, is an active DELNET member, and provides access to the URKUND anti-plagiarism tool through INFLIBNET.",
+    "hostel_accommodation": "Outstation students are accommodated through the university's list of empanelled hostels near the Selaqui campus rather than university-owned dormitories."
+  },
+  "student_support": {
+    "admission_helpline": "1800-120-8727",
+    "admission_email": "admissions@iudehradun.edu.in",
+    "note": "The Admission Office is open Monday-Saturday during standard hours and additionally on Saturdays & Sundays during peak admission season."
+  }
+}

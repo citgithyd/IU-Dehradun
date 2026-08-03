@@ -1,0 +1,19 @@
+{
+  "scholarships": [
+    {
+      "name": "Merit Scholarship",
+      "eligibility": "Students with strong performance in Class XII (or equivalent qualifying examination) and/or national entrance exam scores, evaluated by the respective school.",
+      "benefit": "Tuition fee waiver, tiered by academic performance; exact percentage varies by school and program."
+    },
+    {
+      "name": "B.Pharmacy Merit Scholarship",
+      "eligibility": "Students pursuing the B.Pharmacy program, based on aggregate marks in Class XII and semester-wise performance during the program.",
+      "benefit": "Fee waiver based on academic performance; discontinued if a student has a backlog (RRA/NC/RC) in a semester, faces disciplinary action, or has already availed another fee waiver."
+    },
+    {
+      "name": "General Note",
+      "eligibility": "N/A",
+      "benefit": "Individual schools (IBS, ICFAI Tech School, ICFAI Law School, ICFAI Education School, ICFAI School of Pharmaceutical Sciences) may publish additional scholarship schemes and specific eligibility conditions. Applicants should confirm current scholarship terms on the official IU Dehradun admissions/scholarships pages, as final decisions rest with the university's Scholarship Committee."
+    }
+  ]
+}

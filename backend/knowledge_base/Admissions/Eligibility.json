@@ -1,0 +1,14 @@
+{
+  "general_eligibility": [
+    {"level": "Undergraduate (BBA/B.Com/B.Sc)", "criteria": "10+2 pass in any stream with minimum 50% aggregate marks (varies by program)."},
+    {"level": "Undergraduate (B.Tech)", "criteria": "10+2 with Physics, Chemistry, Mathematics and minimum 50% aggregate marks; JEE Main/state entrance score or university entrance evaluation considered."},
+    {"level": "Undergraduate (BCA)", "criteria": "10+2 with Mathematics as a mandatory subject and minimum 50% aggregate marks."},
+    {"level": "Undergraduate (BA-LLB / BBA-LLB / LLB)", "criteria": "10+2 (for integrated law) or a Bachelor's degree (for LLB) with minimum 45% aggregate marks; CLAT/ILSAT or equivalent law entrance considered."},
+    {"level": "Undergraduate (B.Ed)", "criteria": "Bachelor's/Master's degree with minimum 50% aggregate marks, as per NCTE norms."},
+    {"level": "Postgraduate (MBA)", "criteria": "Bachelor's degree in any discipline with minimum 50% aggregate marks; CAT/MAT/XAT/CMAT/NMAT score preferred."},
+    {"level": "Postgraduate (M.Tech)", "criteria": "B.Tech/B.E in relevant discipline with minimum 55% aggregate marks; GATE score preferred."},
+    {"level": "Postgraduate (LLM)", "criteria": "LLB/BA-LLB/BBA-LLB degree with minimum 50% aggregate marks."},
+    {"level": "Doctoral (Ph.D)", "criteria": "Relevant Master's degree with minimum 55% aggregate marks; valid UGC-NET/GATE/state SET or the university's own Research Aptitude Test."},
+    {"level": "General Note", "criteria": "Exact eligibility criteria may have minor variations by specialization; refer to the program-specific eligibility page on the official IU Dehradun website for precise figures."}
+  ]
+}

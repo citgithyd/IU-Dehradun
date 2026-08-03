@@ -1,0 +1,134 @@
+{
+  "programs": [
+    {
+      "level": "Postgraduate",
+      "id": "pg-mba",
+      "school": "ICFAI Business School",
+      "name": "MBA",
+      "duration": "2 Years (4 Semesters)",
+      "eligibility": "Bachelor's degree in any discipline with minimum 50% aggregate marks; CAT/MAT/XAT/CMAT/NMAT score preferred.",
+      "overview": "A flagship postgraduate management program built around the ICFAI case-study methodology, offering specializations in Finance, Marketing, HR and Operations with industry mentorship.",
+      "curriculum_highlights": [
+        "Corporate Finance",
+        "Strategic Marketing",
+        "Operations Management",
+        "Summer Internship",
+        "Specialization Electives"
+      ],
+      "career_opportunities": [
+        "Management Consultant",
+        "Business Analyst",
+        "Marketing Manager",
+        "Financial Analyst"
+      ],
+      "admission_process": "Based on CAT/MAT/XAT/CMAT/NMAT score or the university's own entrance evaluation, followed by Group Discussion and Personal Interview."
+    },
+    {
+      "level": "Postgraduate",
+      "id": "pg-mtech",
+      "school": "ICFAI Tech School",
+      "name": "M.Tech",
+      "duration": "2 Years (4 Semesters)",
+      "eligibility": "B.Tech/B.E in a relevant discipline with minimum 55% aggregate marks; GATE score preferred.",
+      "overview": "A postgraduate engineering program offered with specializations in Computer Science & Engineering, Mechanical Engineering, Civil Engineering and Electronics & Communication Engineering.",
+      "curriculum_highlights": [
+        "Advanced Coursework in Specialization",
+        "Research Methodology",
+        "Thesis/Project"
+      ],
+      "career_opportunities": [
+        "Senior Engineer",
+        "R&D Associate",
+        "Research Scientist",
+        "PhD (further studies)"
+      ],
+      "admission_process": "Based on GATE score or the university's own entrance test, followed by Personal Interview."
+    },
+    {
+      "level": "Postgraduate",
+      "id": "pg-mca",
+      "school": "ICFAI Tech School",
+      "name": "MCA",
+      "duration": "2 Years (4 Semesters)",
+      "eligibility": "Bachelor's degree with Mathematics at 10+2 or graduation level, minimum 50% aggregate marks.",
+      "overview": "A postgraduate computer applications program covering advanced programming, software engineering and applied computing.",
+      "curriculum_highlights": [
+        "Advanced Programming",
+        "Software Engineering",
+        "Database Systems",
+        "Major Project"
+      ],
+      "career_opportunities": [
+        "Software Developer",
+        "Systems Analyst",
+        "Technical Lead",
+        "Higher studies"
+      ],
+      "admission_process": "As per ICFAI Tech School postgraduate admissions process."
+    },
+    {
+      "level": "Postgraduate",
+      "id": "pg-llm-1yr",
+      "school": "ICFAI Law School",
+      "name": "LLM (1 Year)",
+      "duration": "1 Year (2 Semesters)",
+      "eligibility": "LLB/BA-LLB/BBA-LLB degree with minimum 50% aggregate marks.",
+      "overview": "A one-year postgraduate law program with research and dissertation components.",
+      "curriculum_highlights": [
+        "Advanced Legal Studies",
+        "Research Methodology",
+        "Dissertation"
+      ],
+      "career_opportunities": [
+        "Legal Consultant",
+        "Corporate Counsel",
+        "Academia",
+        "Legal Research"
+      ],
+      "admission_process": "Merit-based on qualifying degree marks and Personal Interview."
+    },
+    {
+      "level": "Postgraduate",
+      "id": "pg-llm-2yr",
+      "school": "ICFAI Law School",
+      "name": "LLM (2 Years)",
+      "duration": "2 Years (4 Semesters)",
+      "eligibility": "LLB/BA-LLB/BBA-LLB degree with minimum 50% aggregate marks.",
+      "overview": "A two-year postgraduate law program with specialization electives, research and dissertation components.",
+      "curriculum_highlights": [
+        "Specialization Electives",
+        "Research Methodology",
+        "Dissertation"
+      ],
+      "career_opportunities": [
+        "Legal Consultant",
+        "Corporate Counsel",
+        "Academia",
+        "Legal Research"
+      ],
+      "admission_process": "Merit-based on qualifying degree marks and Personal Interview; CLAT-PG counselling also considered for LLM admission."
+    },
+    {
+      "level": "Postgraduate",
+      "id": "pg-ma-education",
+      "school": "ICFAI Education School",
+      "name": "MA (Education)",
+      "duration": "2 Years (4 Semesters)",
+      "eligibility": "Bachelor's degree with minimum 50% aggregate marks.",
+      "overview": "A postgraduate education program covering educational theory, research methods and specialization in education leadership/pedagogy.",
+      "curriculum_highlights": [
+        "Educational Theory",
+        "Research Methods",
+        "Curriculum Studies",
+        "Dissertation"
+      ],
+      "career_opportunities": [
+        "Education Researcher",
+        "Curriculum Developer",
+        "Teacher Educator",
+        "Higher studies (PhD)"
+      ],
+      "admission_process": "As per ICFAI Education School postgraduate admissions process."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "admission_process_records": [
+    {"category": "Status", "detail": "Admissions are open for the 2026-27 academic session."},
+    {"category": "Apply Link", "detail": "https://www.iudehradun.edu.in/admissions/online-registration"},
+    {"category": "Step", "step": 1, "title": "Choose program", "detail": "Select the applicable IU Dehradun school and program: ICFAI Business School (IBS), ICFAI Tech School, ICFAI Law School, ICFAI Education School (IEdS), or ICFAI School of Pharmaceutical Sciences (ISPS)."},
+    {"category": "Step", "step": 2, "title": "Online application", "detail": "Use the official online registration / Apply Now link, pay the Rs. 500 online registration fee via card/net banking, and fill personal, academic and program-preference details."},
+    {"category": "Step", "step": 3, "title": "Submit documents", "detail": "Upload a colour photograph and provide mark sheets/certificates and other documents requested by the admissions team."},
+    {"category": "Step", "step": 4, "title": "Selection process", "detail": "Program-specific shortlisting may use qualifying marks, national entrance scores (JEE Main for B.Tech; CAT/MAT/XAT/CMAT/NMAT for MBA; CLAT/ILSAT for integrated law), or the university's own entrance evaluation, followed by a Personal Interview."},
+    {"category": "Step", "step": 5, "title": "Offer and enrollment", "detail": "Selected candidates complete semester fee payment, document verification and enrollment as per the official admission communication."},
+    {"category": "Admission Contact", "unit": "Central Admissions", "toll_free": "1800-120-8727", "email": "admissions@iudehradun.edu.in"},
+    {"category": "Admission Contact", "unit": "Dehradun City Office", "phone": "+91 9319056601"},
+    {"category": "Admission Contact", "unit": "Lucknow City Office", "phone": "+91 9589208770"},
+    {"category": "Admission Contact", "unit": "Patna City Office", "phone": "+91 9308272793"},
+    {"category": "Admission Contact", "unit": "Academic Certificate Verification", "email": "verifications@iudehradun.edu.in"},
+    {"category": "Documents Required", "detail": "10th and 12th mark sheets / certificates; graduation mark sheets and degree certificate for PG/PhD programs; entrance test scorecard if applicable (JEE Main / CAT / MAT / CLAT / GATE, etc.); passport size colour photograph (140-160 px, under 25KB, JPEG/GIF); government-issued ID proof; category certificate if applicable."},
+    {"category": "Note", "detail": "Selection process and eligibility vary by program. Applicants should verify the latest program-specific admission criteria on the official IU Dehradun website before applying."}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "fee_records": [
+    {"category": "Overview", "detail": "Academic year 2026. IU Dehradun publishes detailed admission fee, per-semester fee and caution deposit figures by program on its official Admission & Program Fee page, accessible after starting an application (the page requires student login for exact figures). The figures below are approximate indicative ranges gathered from published third-party sources and should be confirmed on the official fee page before payment."},
+    {"category": "Registration Fee", "detail": "Rs. 500 online registration fee, payable online via card/net banking when submitting the application form; applies to all programs."},
+    {"category": "Program Fee", "program": "B.Tech", "admission_fee": "Approx. Rs. 20,000", "total_program_fee": "Approx. Rs. 4.8-5.9 Lakhs for 4 years (varies by specialization and year)", "note": "Confirm exact per-semester breakdown on the official fee page."},
+    {"category": "Program Fee", "program": "BBA / BBA (Financial Investment Analysis)", "annual_tuition": "Approx. Rs. 1.1 Lakhs per year", "note": "Confirm exact per-semester breakdown on the official fee page."},
+    {"category": "Program Fee", "program": "BCA / B.Sc (Data Science) / B.Sc (Hons.) Mathematics", "note": "Refer to the official Admission & Program Fee page for current figures."},
+    {"category": "Program Fee", "program": "B.Com (Hons.)", "note": "Refer to the official Admission & Program Fee page for current figures."},
+    {"category": "Program Fee", "program": "BBA-LLB (Hons.) / BA-LLB (Hons.) / LLB", "note": "Refer to the official Admission & Program Fee page for current figures."},
+    {"category": "Program Fee", "program": "B.Ed", "note": "Refer to the official Admission & Program Fee page for current figures."},
+    {"category": "Program Fee", "program": "B.Pharmacy", "note": "Scholarship-eligible program; refer to the official Admission & Program Fee page for current figures."},
+    {"category": "Program Fee", "program": "MBA / M.Tech / MCA / LLM / MA (Education)", "note": "Refer to the official Admission & Program Fee page for current figures."},
+    {"category": "Program Fee", "program": "Ph.D (all schools)", "note": "Refer to the official Admission & Program Fee page for current figures."},
+    {"category": "Hostel Fee", "detail": "Approx. Rs. 90,000 - Rs. 4,50,000 depending on course and room type, per third-party aggregator estimates; confirm with the university. Note: outstation students are accommodated through the university's empanelled hostels near campus, not university-owned dormitories."},
+    {"category": "Note", "detail": "Fees can change by academic year and program, and the university's own fee portal (accessible from the Apply Now page, requires student login) is the authoritative source. Convocation fee, alumni fee and caution deposit are typically payable alongside the final-semester fee, and caution deposits are refundable on program completion."}
+  ]
+}

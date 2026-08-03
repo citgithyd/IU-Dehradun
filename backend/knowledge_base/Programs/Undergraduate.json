@@ -1,0 +1,268 @@
+{
+  "programs": [
+    {
+      "level": "Undergraduate",
+      "id": "ug-btech",
+      "school": "ICFAI Tech School",
+      "name": "B.Tech",
+      "duration": "4 Years (8 Semesters)",
+      "eligibility": "10+2 with Physics, Chemistry, Mathematics and minimum 50% aggregate marks; JEE Main / state entrance score or the university's own entrance evaluation considered.",
+      "overview": "A full-time, campus-based engineering program offered with specializations including Computer Science Engineering, Artificial Intelligence & Machine Learning, Data Science & AI Engineering, Electronics & Communication Engineering, Mechatronics Engineering, Civil Engineering and Mechanical Engineering.",
+      "curriculum_highlights": [
+        "Engineering Fundamentals",
+        "Specialization Electives",
+        "Industry Internship",
+        "Major Project"
+      ],
+      "career_opportunities": [
+        "Software Engineer",
+        "Design/Production Engineer",
+        "Systems Engineer",
+        "Higher studies (M.Tech/MS)"
+      ],
+      "admission_process": "Merit-based on Class XII marks and JEE Main/state entrance score or the university's own entrance evaluation, followed by Personal Interview."
+    },
+    {
+      "level": "Undergraduate",
+      "id": "ug-btech-lateral",
+      "school": "ICFAI Tech School",
+      "name": "B.Tech (Lateral Entry)",
+      "duration": "3.5 Years (entry into 3rd semester of the 4-year program)",
+      "eligibility": "3-year Diploma in Engineering from a recognized institution.",
+      "overview": "A lateral-entry pathway into the B.Tech program for diploma holders, joining directly at the third semester.",
+      "curriculum_highlights": [
+        "Bridge Coursework",
+        "Specialization Electives",
+        "Industry Internship",
+        "Major Project"
+      ],
+      "career_opportunities": [
+        "Software Engineer",
+        "Design/Production Engineer",
+        "Systems Engineer",
+        "Higher studies"
+      ],
+      "admission_process": "Merit-based on Diploma marks, followed by counselling/interview as applicable."
+    },
+    {
+      "level": "Undergraduate",
+      "id": "ug-bba",
+      "school": "ICFAI Business School",
+      "name": "BBA",
+      "duration": "3 Years (6 Semesters)",
+      "eligibility": "10+2 in any stream with minimum 50% aggregate marks.",
+      "overview": "An undergraduate management program covering business fundamentals, communication, analytics and specialization electives.",
+      "curriculum_highlights": [
+        "Business Statistics",
+        "Marketing Management",
+        "Financial Accounting",
+        "Capstone Project"
+      ],
+      "career_opportunities": [
+        "Management Trainee",
+        "Business Associate",
+        "Sales & Marketing Executive",
+        "Further studies (MBA)"
+      ],
+      "admission_process": "Merit-based on Class XII marks, followed by counselling/interview as applicable."
+    },
+    {
+      "level": "Undergraduate",
+      "id": "ug-bba-fia",
+      "school": "ICFAI Business School",
+      "name": "BBA (Financial Investment Analysis)",
+      "duration": "3 Years (6 Semesters)",
+      "eligibility": "10+2 in any stream with minimum 50% aggregate marks.",
+      "overview": "A specialized business administration program focused on financial markets, investment analysis and portfolio management alongside core management education.",
+      "curriculum_highlights": [
+        "Financial Markets",
+        "Investment Analysis",
+        "Portfolio Management",
+        "Capstone Project"
+      ],
+      "career_opportunities": [
+        "Investment Analyst Trainee",
+        "Financial Associate",
+        "Management Trainee",
+        "Further studies (MBA)"
+      ],
+      "admission_process": "Merit-based on Class XII marks, followed by counselling/interview as applicable."
+    },
+    {
+      "level": "Undergraduate",
+      "id": "ug-bca",
+      "school": "ICFAI Tech School",
+      "name": "BCA",
+      "duration": "3 Years (6 Semesters)",
+      "eligibility": "10+2 with Mathematics as a mandatory subject and minimum 50% aggregate marks.",
+      "overview": "A computer applications program offered with specializations including Data Science & AI, Cyber Security, DevOps & Automation, Cloud Computing, and Mobile Application & Web Technology.",
+      "curriculum_highlights": [
+        "Programming",
+        "Database Systems",
+        "Specialization Electives",
+        "Project Work"
+      ],
+      "career_opportunities": [
+        "Software Developer",
+        "Technical Associate",
+        "Data/Cloud/Security Associate",
+        "Higher studies (MCA/M.Sc)"
+      ],
+      "admission_process": "As per ICFAI Tech School undergraduate admissions process."
+    },
+    {
+      "level": "Undergraduate",
+      "id": "ug-bcom-hons",
+      "school": "ICFAI Business School",
+      "name": "B.Com (Hons.)",
+      "duration": "3 Years (6 Semesters)",
+      "eligibility": "10+2 in any stream with minimum 50% aggregate marks.",
+      "overview": "An undergraduate commerce program covering accounting, finance, taxation and business economics.",
+      "curriculum_highlights": [
+        "Financial Accounting",
+        "Business Law",
+        "Taxation",
+        "Project Work"
+      ],
+      "career_opportunities": [
+        "Accounts Associate",
+        "Finance Associate",
+        "Tax Assistant",
+        "Further studies"
+      ],
+      "admission_process": "As per the university's undergraduate admissions process."
+    },
+    {
+      "level": "Undergraduate",
+      "id": "ug-bsc-mathematics-hons",
+      "school": "ICFAI Tech School",
+      "name": "B.Sc (Hons.) Mathematics",
+      "duration": "3 Years (6 Semesters)",
+      "eligibility": "10+2 with Mathematics and minimum 50% aggregate marks.",
+      "overview": "An undergraduate mathematics program emphasizing mathematical foundations, analytical reasoning and quantitative methods.",
+      "curriculum_highlights": [
+        "Calculus",
+        "Algebra",
+        "Statistics",
+        "Project Work"
+      ],
+      "career_opportunities": [
+        "Analyst",
+        "Research Assistant",
+        "Teaching/Academia after higher studies",
+        "Higher studies"
+      ],
+      "admission_process": "As per ICFAI Tech School undergraduate admissions process."
+    },
+    {
+      "level": "Undergraduate",
+      "id": "ug-bsc-data-science",
+      "school": "ICFAI Tech School",
+      "name": "B.Sc (Data Science)",
+      "duration": "3 Years (6 Semesters)",
+      "eligibility": "10+2 with Mathematics and minimum 50% aggregate marks.",
+      "overview": "An undergraduate program focused on statistics, programming, data analytics and visualization.",
+      "curriculum_highlights": [
+        "Statistics",
+        "Python",
+        "Data Visualization",
+        "Analytics Project"
+      ],
+      "career_opportunities": [
+        "Data Analyst",
+        "Analytics Associate",
+        "Business Analyst",
+        "Higher studies"
+      ],
+      "admission_process": "As per ICFAI Tech School undergraduate admissions process."
+    },
+    {
+      "level": "Undergraduate",
+      "id": "ug-bba-llb",
+      "school": "ICFAI Law School",
+      "name": "BBA-LLB (Hons.)",
+      "duration": "5 Years (10 Semesters)",
+      "eligibility": "10+2 in any stream with minimum 45% aggregate marks; CLAT/ILSAT or equivalent law entrance considered.",
+      "overview": "An integrated law program combining management education with legal studies, BCI-approved, with moot courts and mandatory internships.",
+      "curriculum_highlights": [
+        "Business Law",
+        "Constitutional Law",
+        "Moot Court Practice",
+        "Internships"
+      ],
+      "career_opportunities": [
+        "Corporate Legal Advisor",
+        "Litigation",
+        "Compliance Associate",
+        "Legal Research"
+      ],
+      "admission_process": "Based on CLAT/ILSAT or equivalent law entrance score and Class XII marks, followed by counselling."
+    },
+    {
+      "level": "Undergraduate",
+      "id": "ug-ba-llb",
+      "school": "ICFAI Law School",
+      "name": "BA-LLB (Hons.)",
+      "duration": "5 Years (10 Semesters)",
+      "eligibility": "10+2 in any stream with minimum 45% aggregate marks; CLAT/ILSAT or equivalent law entrance considered.",
+      "overview": "An integrated law program combining arts subjects with core legal education, moot courts and mandatory internships.",
+      "curriculum_highlights": [
+        "Constitutional Law",
+        "Contract Law",
+        "Moot Court Practice",
+        "Internships with law firms"
+      ],
+      "career_opportunities": [
+        "Litigation",
+        "Corporate Legal Advisor",
+        "Judiciary (after further exams)",
+        "Legal Research"
+      ],
+      "admission_process": "Based on CLAT/ILSAT or equivalent law entrance score and Class XII marks, followed by counselling."
+    },
+    {
+      "level": "Undergraduate",
+      "id": "ug-llb",
+      "school": "ICFAI Law School",
+      "name": "LLB",
+      "duration": "3 Years (6 Semesters)",
+      "eligibility": "Bachelor's degree in any discipline with minimum 45% aggregate marks.",
+      "overview": "A three-year professional law degree, BCI-approved, with moot courts, internships and practice-oriented training.",
+      "curriculum_highlights": [
+        "Jurisprudence",
+        "Constitutional Law",
+        "Moot Court Practice",
+        "Internships"
+      ],
+      "career_opportunities": [
+        "Litigation",
+        "Corporate Legal Advisor",
+        "Legal Research",
+        "Judiciary (after further exams)"
+      ],
+      "admission_process": "Merit-based on qualifying degree marks, followed by counselling/interview as applicable."
+    },
+    {
+      "level": "Undergraduate",
+      "id": "ug-bed",
+      "school": "ICFAI Education School",
+      "name": "B.Ed",
+      "duration": "2 Years (4 Semesters)",
+      "eligibility": "Bachelor's/Master's degree with minimum 50% aggregate marks, as per NCTE norms.",
+      "overview": "An NCTE-approved teacher education program combining pedagogy coursework with school internships and hands-on teaching practice.",
+      "curriculum_highlights": [
+        "Pedagogy of School Subjects",
+        "Educational Psychology",
+        "Teaching Internship",
+        "Practicum"
+      ],
+      "career_opportunities": [
+        "School Teacher",
+        "Curriculum Associate",
+        "Education Counsellor",
+        "Further studies (MA Education)"
+      ],
+      "admission_process": "Merit-based on qualifying degree marks and/or state B.Ed entrance score, as per NCTE norms."
+    }
+  ]
+}

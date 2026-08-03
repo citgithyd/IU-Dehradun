@@ -1,0 +1,90 @@
+{
+  "programs": [
+    {
+      "level": "Doctoral",
+      "id": "phd-management",
+      "school": "ICFAI Business School",
+      "name": "Ph.D in Management",
+      "duration": "3-5 Years",
+      "eligibility": "Master's degree in Management/Commerce/related discipline with minimum 55% aggregate marks; valid UGC-NET/state SET or the university's Research Aptitude Test.",
+      "overview": "A full-time/part-time doctoral program focused on original research in finance, marketing, HR or operations, guided by experienced faculty mentors.",
+      "curriculum_highlights": [
+        "Research Methodology Coursework",
+        "Comprehensive Examination",
+        "Thesis Research",
+        "Publication Requirements"
+      ],
+      "career_opportunities": [
+        "Academia / Professorship",
+        "Corporate Research Roles",
+        "Think Tanks & Policy Research"
+      ],
+      "admission_process": "Written test followed by Research Proposal presentation and Interview."
+    },
+    {
+      "level": "Doctoral",
+      "id": "phd-engineering",
+      "school": "ICFAI Tech School",
+      "name": "Ph.D (Engineering / Science & Technology)",
+      "duration": "3-5 Years",
+      "eligibility": "M.Tech/M.E or equivalent Master's degree with minimum 55% aggregate marks; valid GATE/UGC-NET preferred.",
+      "overview": "Doctoral research in engineering and applied science areas offered through ICFAI Tech School.",
+      "curriculum_highlights": [
+        "Advanced Research Methods",
+        "Comprehensive Examination",
+        "Thesis Research",
+        "Publication in peer-reviewed journals"
+      ],
+      "career_opportunities": [
+        "Academia",
+        "R&D roles in industry",
+        "Research Scientist"
+      ],
+      "admission_process": "Written test followed by Research Proposal presentation and Interview."
+    },
+    {
+      "level": "Doctoral",
+      "id": "phd-law",
+      "school": "ICFAI Law School",
+      "name": "Ph.D (Law)",
+      "duration": "3-5 Years",
+      "eligibility": "Master's degree in Law or a related discipline, as per ICFAI Law School doctoral admission norms.",
+      "overview": "A doctoral research program in law and legal studies offered through ICFAI Law School.",
+      "curriculum_highlights": [
+        "Legal Research Methodology",
+        "Comprehensive Examination",
+        "Thesis Research",
+        "Publication Requirements"
+      ],
+      "career_opportunities": [
+        "Academia",
+        "Legal Research",
+        "Policy Research",
+        "Think Tanks"
+      ],
+      "admission_process": "As per ICFAI Law School doctoral admissions process."
+    },
+    {
+      "level": "Doctoral",
+      "id": "phd-education",
+      "school": "ICFAI Education School",
+      "name": "Ph.D (Education)",
+      "duration": "3-5 Years",
+      "eligibility": "Master's degree in Education or a related discipline, as per ICFAI Education School doctoral admission norms.",
+      "overview": "A doctoral research program in education offered through ICFAI Education School.",
+      "curriculum_highlights": [
+        "Research Methodology",
+        "Comprehensive Examination",
+        "Thesis Research",
+        "Publication Requirements"
+      ],
+      "career_opportunities": [
+        "Academia",
+        "Education Research",
+        "Policy Research",
+        "Teacher Education Leadership"
+      ],
+      "admission_process": "As per ICFAI Education School doctoral admissions process."
+    }
+  ]
+}

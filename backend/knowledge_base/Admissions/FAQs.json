@@ -1,0 +1,9 @@
+{
+  "faqs": [
+    {"question": "Is hostel accommodation compulsory?", "answer": "IU Dehradun publishes a list of empanelled hostels near the Selaqui campus for outstation students; accommodation is arranged through these approved hostels rather than being university-owned housing, and day scholars can commute independently."},
+    {"question": "Are lateral entry admissions available for B.Tech?", "answer": "Yes. Diploma holders with a 3-year Engineering Diploma can join the B.Tech program directly at the 3rd semester through the B.Tech (Lateral Entry) pathway."},
+    {"question": "What is the online registration fee?", "answer": "Applicants pay Rs. 500 online via card or net banking as part of submitting the online application form."},
+    {"question": "Is there an entrance exam for every program?", "answer": "It varies by program: B.Tech typically considers JEE Main/state entrance scores, MBA considers CAT/MAT/XAT/CMAT/NMAT, integrated law programs consider CLAT/ILSAT, and other programs may rely on the university's own entrance evaluation or Class XII/qualifying degree merit, followed by a Personal Interview."},
+    {"question": "Is the Admission Office open on weekends?", "answer": "Yes, the Admission Office is open on Saturdays and Sundays as well, in addition to regular weekday hours, to assist applicants."}
+  ]
+}
