@@ -1,14 +1,13 @@
 """
 Guided Navigation engine.
 
-Menu clicks NEVER use RAG — they load structured JSON directly and the
-frontend renders it as cards/lists. This module maps a small set of known
-navigation "paths" (sent by the frontend when a menu/card is tapped) to the
-corresponding knowledge_base JSON file(s).
+Menu clicks NEVER use RAG. They load structured knowledge content directly
+from PostgreSQL and the frontend renders it as cards/lists.
 """
-from services.json_loader import load_json
+from sqlalchemy.orm import Session
 
-# path -> knowledge_base relative file(s)
+import models
+
 NAV_MAP = {
     "about_ifhe": ["University/About_IFHE.json"],
     "schools": ["University/Schools.json"],
@@ -31,17 +30,31 @@ class NavigationNotFound(Exception):
     pass
 
 
-def resolve_navigation(path: str) -> dict:
+def _load_payload(db: Session, relative_path: str) -> dict:
+    document = (
+        db.query(models.KnowledgeDocument)
+        .filter(
+            models.KnowledgeDocument.source_path == relative_path,
+            models.KnowledgeDocument.status == "published",
+            models.KnowledgeDocument.is_deleted.is_(False),
+        )
+        .first()
+    )
+    if not document:
+        raise NavigationNotFound(f"Knowledge base content not found in PostgreSQL: {relative_path}")
+    return document.payload
+
+
+def resolve_navigation(path: str, db: Session) -> dict:
     files = NAV_MAP.get(path)
     if not files:
         raise NavigationNotFound(f"Unknown navigation path: {path}")
     if len(files) == 1:
-        return load_json(files[0])
-    return {f.split("/")[-1].replace(".json", ""): load_json(f) for f in files}
+        return _load_payload(db, files[0])
+    return {f.split("/")[-1].replace(".json", ""): _load_payload(db, f) for f in files}
 
 
-def get_program_by_id(level: str, program_id: str) -> dict | None:
-    """level: undergraduate | postgraduate | doctoral | certificate"""
+def get_program_by_id(level: str, program_id: str, db: Session) -> dict | None:
     file_map = {
         "undergraduate": "Programs/Undergraduate.json",
         "postgraduate": "Programs/Postgraduate.json",
@@ -51,7 +64,7 @@ def get_program_by_id(level: str, program_id: str) -> dict | None:
     file_path = file_map.get(level.lower())
     if not file_path:
         return None
-    data = load_json(file_path)
+    data = _load_payload(db, file_path)
     for program in data.get("programs", []):
         if program.get("id") == program_id:
             return program

@@ -6,11 +6,13 @@ from config import get_settings
 
 settings = get_settings()
 
-os.makedirs("./data", exist_ok=True)
+if settings.database_url.startswith("sqlite"):
+    os.makedirs("./data", exist_ok=True)
 
 engine = create_engine(
     settings.database_url,
     connect_args={"check_same_thread": False} if settings.database_url.startswith("sqlite") else {},
+    pool_pre_ping=True,
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()

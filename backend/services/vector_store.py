@@ -1,16 +1,18 @@
 """
 Vector store service: wraps ChromaDB + sentence-transformers.
 
-Responsible for:
-  - embedding text chunks with all-MiniLM-L6-v2
-  - persisting them in a local ChromaDB collection
-  - similarity search at query time (top-K retrieval for the RAG engine)
+ChromaDB stores embeddings and PostgreSQL record identifiers only. Complete
+chatbot content stays in PostgreSQL and is fetched by RAG after similarity
+search returns matching chunk IDs.
 """
 import logging
+import os
 from functools import lru_cache
 
+os.environ.setdefault("ANONYMIZED_TELEMETRY", "False")
+
 import chromadb
-from chromadb.utils import embedding_functions
+from sentence_transformers import SentenceTransformer
 
 from config import get_settings
 
@@ -21,12 +23,9 @@ settings = get_settings()
 class VectorStore:
     def __init__(self):
         self._client = chromadb.PersistentClient(path=settings.chroma_persist_dir)
-        self._embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-            model_name=settings.embedding_model
-        )
+        self._embedding_model = SentenceTransformer(settings.embedding_model)
         self._collection = self._client.get_or_create_collection(
             name=settings.chroma_collection_name,
-            embedding_function=self._embedding_fn,
             metadata={"hnsw:space": "cosine"},
         )
 
@@ -37,36 +36,48 @@ class VectorStore:
     def is_empty(self) -> bool:
         return self._collection.count() == 0
 
+    def _embed(self, texts: list[str]) -> list[list[float]]:
+        embeddings = self._embedding_model.encode(texts, normalize_embeddings=True)
+        return embeddings.tolist()
+
     def add_chunks(self, ids: list[str], documents: list[str], metadatas: list[dict]):
-        """Upserts chunks in batches to avoid overwhelming the embedding model."""
+        """Embeds text, then stores only embeddings and metadata in ChromaDB."""
         batch_size = 64
         for i in range(0, len(ids), batch_size):
+            batch_docs = documents[i:i + batch_size]
             self._collection.upsert(
                 ids=ids[i:i + batch_size],
-                documents=documents[i:i + batch_size],
+                embeddings=self._embed(batch_docs),
                 metadatas=metadatas[i:i + batch_size],
             )
-        logger.info("Upserted %d chunks into ChromaDB", len(ids))
+        logger.info("Upserted %d chunk embeddings into ChromaDB", len(ids))
 
     def query(self, question: str, top_k: int | None = None) -> list[dict]:
-        """Returns list of {text, metadata, distance} sorted by relevance."""
+        """Returns list of {id, metadata, distance} sorted by relevance."""
         k = top_k or settings.rag_top_k
         if self.is_empty():
             return []
-        results = self._collection.query(query_texts=[question], n_results=k)
+
+        results = self._collection.query(
+            query_embeddings=self._embed([question]),
+            n_results=k,
+            include=["metadatas", "distances"],
+        )
         hits = []
-        docs = results.get("documents", [[]])[0]
+        ids = results.get("ids", [[]])[0]
         metas = results.get("metadatas", [[]])[0]
         dists = results.get("distances", [[]])[0]
-        for doc, meta, dist in zip(docs, metas, dists):
-            hits.append({"text": doc, "metadata": meta, "distance": dist})
+        for chunk_id, meta, dist in zip(ids, metas, dists):
+            hits.append({"id": chunk_id, "metadata": meta or {}, "distance": dist})
         return hits
 
     def reset(self):
-        self._client.delete_collection(settings.chroma_collection_name)
+        try:
+            self._client.delete_collection(settings.chroma_collection_name)
+        except Exception:
+            logger.info("ChromaDB collection did not exist before reset")
         self._collection = self._client.get_or_create_collection(
             name=settings.chroma_collection_name,
-            embedding_function=self._embedding_fn,
             metadata={"hnsw:space": "cosine"},
         )
 
