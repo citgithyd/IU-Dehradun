@@ -14,6 +14,8 @@ import logging
 from groq import Groq
 
 from config import get_settings
+from database import SessionLocal
+from models import KnowledgeChunk
 from services.vector_store import get_vector_store
 
 logger = logging.getLogger("ifhe_chatbot.rag")
@@ -61,6 +63,46 @@ def _generate_text(prompt: str) -> str:
     return (response.choices[0].message.content or "").strip()
 
 
+def _load_chunk_texts(chunk_ids: list[str]) -> dict[str, str]:
+    if not chunk_ids:
+        return {}
+
+    db = SessionLocal()
+    try:
+        rows = (
+            db.query(KnowledgeChunk.id, KnowledgeChunk.text)
+            .filter(KnowledgeChunk.id.in_(chunk_ids), KnowledgeChunk.is_active.is_(True))
+            .all()
+        )
+        return {chunk_id: text for chunk_id, text in rows if text}
+    finally:
+        db.close()
+
+
+def _extract_hit_text(hit: dict, chunk_texts: dict[str, str]) -> str | None:
+    # Backward-compatible path if the vector hit already includes text.
+    text = hit.get("text")
+    if text:
+        return text
+
+    # Primary path: resolve by KnowledgeChunk id from PostgreSQL.
+    hit_id = hit.get("id")
+    if hit_id and hit_id in chunk_texts:
+        return chunk_texts[hit_id]
+
+    # Last-resort fallback: build minimal context from metadata.
+    metadata = hit.get("metadata") or {}
+    item = metadata.get("item")
+    field = metadata.get("field")
+    source_file = metadata.get("source_file")
+    category = metadata.get("category")
+    fragments = [frag for frag in [item, field, source_file, category] if frag]
+    if fragments:
+        return " | ".join(str(frag) for frag in fragments)
+
+    return None
+
+
 def answer_with_rag(question: str, current_topic: str | None = None) -> tuple[str, list[str]]:
     """
     Returns (answer_text, list_of_source_files_used).
@@ -72,13 +114,21 @@ def answer_with_rag(question: str, current_topic: str | None = None) -> tuple[st
     if not hits:
         return NOT_FOUND_REPLY, []
 
+    chunk_texts = _load_chunk_texts([hit.get("id") for hit in hits if hit.get("id")])
+
     context_blocks = []
     sources = []
     for hit in hits:
-        context_blocks.append(hit["text"])
+        text = _extract_hit_text(hit, chunk_texts)
+        if text:
+            context_blocks.append(text)
         src = hit.get("metadata", {}).get("source_file")
         if src and src not in sources:
             sources.append(src)
+
+    if not context_blocks:
+        logger.warning("RAG returned hits but none had usable context text")
+        return NOT_FOUND_REPLY, sources
 
     context_text = "\n\n".join(f"- {c}" for c in context_blocks)
     topic_line = f"Conversation topic so far: {current_topic}\n" if current_topic else ""

@@ -19,17 +19,24 @@ Final Response
 
 ## Quick start
 
-**Backend:**
+**Backend + frontend (single runtime command):**
 ```bash
 cd backend
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env        # add your GROQ_API_KEY
+
+# Build frontend once (or after frontend changes)
+cd ../frontend
+npm install
+npm run build
+cd ../backend
+
 python ingest.py            # embed knowledge_base/*.json into ChromaDB
 uvicorn main:app --reload --port 8000
 ```
 
-**Frontend:**
+**Optional frontend dev server (hot reload UI work):**
 ```bash
 cd frontend
 npm install
@@ -37,7 +44,7 @@ cp .env.example .env        # VITE_API_BASE_URL=http://localhost:8000
 npm run dev
 ```
 
-Visit http://localhost:5173 and click the purple chat bubble.
+Visit http://localhost:8000 for normal run mode, or http://localhost:5173 when using Vite dev mode.
 
 ## What's implemented
 

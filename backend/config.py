@@ -8,6 +8,7 @@ Holds environment-driven settings AND the hardcoded static config
 from functools import lru_cache
 from pydantic_settings import BaseSettings
 from pydantic import Field
+from urllib.parse import urlsplit
 
 
 class Settings(BaseSettings):
@@ -21,10 +22,12 @@ class Settings(BaseSettings):
 
     embedding_model: str = Field(default="all-MiniLM-L6-v2", alias="EMBEDDING_MODEL")
 
-    allowed_origins: str = Field(default="http://127.0.0.1:5174", alias="ALLOWED_ORIGINS")
+    allowed_origins: str = Field(
+        default="http://localhost:8000,http://127.0.0.1:8000,http://localhost:5174,http://127.0.0.1:5174",
+        alias="ALLOWED_ORIGINS",
+    )
 
-    frontend_dev_url: str = Field(default="http://127.0.0.1:5174", alias="FRONTEND_DEV_URL")
-    start_frontend: bool = Field(default=True, alias="START_FRONTEND")
+    app_url: str = Field(default="http://127.0.0.1:8000", alias="APP_URL")
     open_browser: bool = Field(default=True, alias="OPEN_BROWSER")
 
     rag_top_k: int = Field(default=5, alias="RAG_TOP_K")
@@ -37,9 +40,15 @@ class Settings(BaseSettings):
     @property
     def cors_origins(self) -> list[str]:
         origins = [o.strip() for o in self.allowed_origins.split(",") if o.strip()]
-        if self.frontend_dev_url and self.frontend_dev_url not in origins:
-            origins.append(self.frontend_dev_url)
+        parsed = urlsplit(self.app_url)
+        app_origin = f"{parsed.scheme}://{parsed.netloc}" if parsed.scheme and parsed.netloc else ""
+        if app_origin and app_origin not in origins:
+            origins.append(app_origin)
         return origins
+
+    @property
+    def cors_origin_regex(self) -> str:
+        return r"https?://(localhost|127\.0\.0\.1)(:\\d+)?$"
 
     @property
     def ai_api_key(self) -> str:
